@@ -1,3 +1,13 @@
+struct Student {
+    let name: String
+    var testScore: Int
+}
+
+let students = [Student(name: "Vishal", testScore: 81),
+                Student(name: "Jaya", testScore: 91),
+                Student(name: "Yarvik", testScore: 99)
+]
+
 // Filter
 var topStudnetFilter:(Student) -> Bool = { student in
     return student.testScore > 80
