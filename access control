@@ -1,0 +1,7 @@
+private: Only class can use it.
+fileprivate: Class & same file Types can use it.
+
+
+Internal: this means only your Swift code can read and write the property. If you ship your code as a framework for others to use, they won’t be able to read the property.
+Public: Class can be accessed across different modules (app module and 3rd party library) but cannot be subclassed and its content cannot be overridden.
+open — The most unrestricted access control and other developers can subclass it and override those open properties.
